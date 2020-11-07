@@ -11,7 +11,7 @@ class Store extends React.Component {
         fetchData();
       };
       return () => {
-        //
+        ///
       };
     }, []);
 
