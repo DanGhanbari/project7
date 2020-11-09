@@ -1,29 +1,17 @@
-import React, { Component, useState, useEffect } from "react";
-import axios from "axios";
+import React from "react";
+import data from "../data";
 
 class Store extends React.Component {
   render() {
-    const [items, setItem] = useState([]);
-    useEffect(() => {
-      const fetchData = async () => {
-        const { data } = await axios.get("/");
-        setItem(data);
-        fetchData();
-      };
-      return () => {
-        ///
-      };
-    }, []);
-
     return (
       <div>
         <section className="container content-section">
           <h2 className="section-header">CAMERA</h2>
           <div className="shop-items">
-            {items.map((item) => (
+            {data.itemCamera.map((item) => (
               <div className="shop-item">
                 <span className="shop-item-title">{item.name}</span>
-                <img className="shop-item-image" src={item.image} />
+                <img className="shop-item-image" src={item.image} alt="#" />
                 <div className="shop-item-details">
                   <span className="shop-item-price">£{item.price}</span>
                   <button
@@ -40,10 +28,10 @@ class Store extends React.Component {
         <section className="container content-section">
           <h2 className="section-header">DVR</h2>
           <div className="shop-items">
-            {items.map((item) => (
+            {data.itemDVR.map((item) => (
               <div className="shop-item">
                 <span className="shop-item-title">{item.name}</span>
-                <img className="shop-item-image" src={item.image} />
+                <img className="shop-item-image" src={item.image} alt="#" />
                 <div className="shop-item-details">
                   <span className="shop-item-price">£{item.price}</span>
                   <button
@@ -124,4 +112,5 @@ class Store extends React.Component {
     );
   }
 }
+
 export default Store;
