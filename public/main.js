@@ -151,7 +151,7 @@ function updateCartTotal() {
     var quantityElement = cartRow.getElementsByClassName(
       "cart-quantity-input"
     )[0];
-    var price = parseFloat(priceElement.innerText.replace("£", ""));
+    var price = parseFloat(priceElement.innerText.replace("£", " "));
     var quantity = quantityElement.value;
     total = total + price * quantity;
   }

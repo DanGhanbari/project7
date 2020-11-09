@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import data from "../data";
 
 class Store extends React.Component {
@@ -10,8 +11,10 @@ class Store extends React.Component {
           <div className="shop-items">
             {data.itemCamera.map((item) => (
               <div className="shop-item">
-                <span className="shop-item-title">{item.name}</span>
-                <img className="shop-item-image" src={item.image} alt="#" />
+                <Link to={"item/" + item._id}>{item.name} </Link>
+                <Link to={"item/" + item._id}>
+                  <img className="shop-item-image" src={item.image} alt="#" />
+                </Link>
                 <div className="shop-item-details">
                   <span className="shop-item-price">£{item.price}</span>
                   <button
@@ -55,7 +58,7 @@ class Store extends React.Component {
             </span>
           </div>
           <div className="cart-items">
-            <div className="cart-row">
+            {/* <div className="cart-row">
               <div className="cart-item cart-column">
                 <img
                   className="cart-item-image"
@@ -76,8 +79,8 @@ class Store extends React.Component {
                   REMOVE
                 </button>
               </div>
-            </div>
-            <div className="cart-row">
+            </div> */}
+            {/* <div className="cart-row">
               <div className="cart-item cart-column">
                 <img
                   className="cart-item-image"
@@ -98,11 +101,11 @@ class Store extends React.Component {
                   REMOVE
                 </button>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="cart-total">
             <strong className="cart-total-title">Total</strong>
-            <span className="cart-total-price">£39.97</span>
+            <span className="cart-total-price">£ 0</span>
           </div>
           <button className="btn btn-primary btn-purchase" type="button">
             PURCHASE

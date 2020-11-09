@@ -1,6 +1,7 @@
 export default {
   itemCamera: [
     {
+      _id: "1",
       name: "camera1",
       image: "/image/cam.jpeg",
       price: 1200,
@@ -8,6 +9,7 @@ export default {
       availibity: "Out of Stock",
     },
     {
+      _id: "2",
       name: "camera2",
       image: "/image/cam.jpeg",
       price: 150,
@@ -15,6 +17,7 @@ export default {
       availibity: "Out of Stock",
     },
     {
+      _id: "3",
       name: "camera3",
       image: "/image/cam.jpeg",
       price: 180,
@@ -22,6 +25,7 @@ export default {
       availibity: "Out of Stock",
     },
     {
+      _id: "4",
       name: "camera4",
       image: "/image/cam.jpeg",
       price: 200,
@@ -31,6 +35,7 @@ export default {
   ],
   itemDVR: [
     {
+      _id: "100",
       name: "DVR1",
       image: "/image/DVR.jpg",
       price: 120,
@@ -38,6 +43,7 @@ export default {
       availibity: "Out of Stock",
     },
     {
+      _id: "101",
       name: "DVR2",
       image: "/image/DVR.jpg",
       price: 150,
@@ -45,6 +51,7 @@ export default {
       availibity: "Out of Stock",
     },
     {
+      _id: "102",
       name: "DVR3",
       image: "/image/DVR.jpg",
       price: 180,
@@ -52,6 +59,7 @@ export default {
       availibity: "Out of Stock",
     },
     {
+      _id: "103",
       name: "DVR4",
       image: "/image/DVR.jpg",
       price: 200,
